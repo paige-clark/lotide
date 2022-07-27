@@ -13,9 +13,7 @@ INPUT: an array
 OUTPUT: a new array that just contains the middle numbers of an inputted array
 */
 
-const evenArray = [1, 2, 3, 4, 8, 9];
-const oddArray = ['chicken egg', 'quail egg', 'turkey giblets', 'gravy', 'ham'];
-
+// FUNCTION THAT RETURNS MIDDLE VALUES OF AN ARRAY
 const middle = (array) => {
   let returnArray = [];
   //if the array is even
@@ -34,7 +32,7 @@ const middle = (array) => {
 //TESTING:
 console.log(middle([1, 2, 3, 4]));
 console.log(middle([1, 2, 3, 4, 8, 9]));
-console.log(middle(['chicken egg', 'quail egg', 'turkey giblets'])); 
+console.log(middle(['chicken egg', 'quail egg', 'turkey giblets']));
 console.log(middle(['chicken egg', 'quail egg', 'turkey giblets', 'gravy', 'ham']));
 console.log(middle([1, 4])); //should return empty array
 console.log(middle([1])); // should return empty array
