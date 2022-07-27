@@ -6,14 +6,14 @@
  * EDGE: if no key is given
  */
 
+// FIND BY KEY VALUE FUNCTION
 const findKeyByValue = (obj, value) => {
   const keyArray = Object.keys(obj);
-  console.log(keyArray);
   for (let key of keyArray) {
     if (obj[key] === value) {
       return key;
     }
-  };
+  }
 };
 
 
