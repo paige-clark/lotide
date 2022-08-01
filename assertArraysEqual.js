@@ -1,21 +1,16 @@
-// COMPARE TWO ARRAYS FOR EXACT MATCH AND LOGS MESSAGE (also returns true or false)
+const eqArrays = require('./eqArrays');
+const inspect = require('util').inspect;
+
+// COMPARE TWO ARRAYS FOR EXACT MATCH AND LOGS MESSAGE 
 const assertArraysEqual = (arrayOne, arrayTwo) => {
-  const inspect = require('util').inspect;
-  // if they are not the same length, false
-  if (arrayOne.length !== arrayTwo.length) {
+  if (!eqArrays(arrayOne, arrayTwo)) {
     console.log(`🔴🔴🔴 Arrays DON'T match: ${inspect(arrayOne)} !== ${inspect(arrayTwo)}`);
-    return false;
   }
-  // if the index values don't match, false
-  for (let i = 0; i < arrayOne.length; i++) {
-    if (arrayOne[i] !== arrayTwo[i]) {
-      console.log(`🔴🔴🔴 Arrays DON'T match: ${inspect(arrayOne)} !== ${inspect(arrayTwo)}`);
-      return false;
-    }
+  if (eqArrays(arrayOne, arrayTwo)) {
+    console.log(`🟢🟢🟢 Arrays DO match: ${inspect(arrayOne)} === ${inspect(arrayTwo)}`);
   }
-  // otherwise return true
-  console.log(`🟢🟢🟢 Arrays DO match: ${inspect(arrayOne)} === ${inspect(arrayTwo)}`);
-  return true;
 };
+
+// EXAMPLE INPUT: assertArraysEqual([1,3,3], [1,2,3])
 
 module.exports = assertArraysEqual;

@@ -8,6 +8,7 @@ console.log('Should PASS:');
 assertArraysEqual(tail([5,6,7]), [6,7]);
 assertArraysEqual(tail(["Hello", "Lighthouse", "Labs"]), ["Lighthouse", "Labs"]);
 assertArraysEqual(tail(test1), [ 2, 3, 4 ]);
+assertArraysEqual(tail([]), []);
 
 console.log('Should FAIL:');
 assertArraysEqual(tail(["Night", "Lighthouse", "Labs"]), ["Night", "Lighthouse", "Labs"]);
