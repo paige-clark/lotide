@@ -1,18 +1,3 @@
-/* NOTES
-INPUT: an array
-- first check the length of the array and see if it's even or odd
-  + maybe use modulo or see if I can find a new function to check if is even or is odd
-
-- if the array length is EVEN you must return the middle two numbers
-- if the array length is ODD you must return the middle one number
-  + google to see if there's a good way to do this, otherwise this can likely be
-    solved with looping
-  + I'm guessing the number should be divided by two and you take the entry at that
-    index, just not sure about the even situation
-
-OUTPUT: a new array that just contains the middle numbers of an inputted array
-*/
-
 // FUNCTION THAT RETURNS MIDDLE VALUES OF AN ARRAY
 const middle = (array) => {
   let returnArray = [];
@@ -29,10 +14,19 @@ const middle = (array) => {
   return returnArray;
 };
 
-//TESTING:
-console.log(middle([1, 2, 3, 4]));
-console.log(middle([1, 2, 3, 4, 8, 9]));
-console.log(middle(['chicken egg', 'quail egg', 'turkey giblets']));
-console.log(middle(['chicken egg', 'quail egg', 'turkey giblets', 'gravy', 'ham']));
-console.log(middle([1, 4])); //should return empty array
-console.log(middle([1])); // should return empty array
+module.exports = middle;
+
+/* NOTES (archive)
+INPUT: an array
+- first check the length of the array and see if it's even or odd
+  + maybe use modulo or see if I can find a new function to check if is even or is odd
+
+- if the array length is EVEN you must return the middle two numbers
+- if the array length is ODD you must return the middle one number
+  + google to see if there's a good way to do this, otherwise this can likely be
+    solved with looping
+  + I'm guessing the number should be divided by two and you take the entry at that
+    index, just not sure about the even situation
+
+OUTPUT: a new array that just contains the middle numbers of an inputted array
+*/
