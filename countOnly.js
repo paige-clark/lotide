@@ -13,6 +13,8 @@ const countOnly = (itemCollection, itemsToCount) => {
   return result;
 };
 
+module.exports = countOnly;
+
 // TESTING:
 
 // ASSERT EQUAL FUNCTION

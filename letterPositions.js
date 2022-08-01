@@ -16,6 +16,8 @@ const letterPositions = (str) => {
   return results;
 };
 
+module.exports = letterPositions;
+
 
 // TESTING:
 // const stringOne = 'Eggy';

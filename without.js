@@ -9,4 +9,6 @@ const without = (sourceArray, itemsToRemove) => {
   return result;
 };
 
-console.log(without([4, 5, 6, 5, 9, 10], [4, '5']));
+module.exports = without;
+
+// console.log(without([4, 5, 6, 5, 9, 10], [4, '5']));

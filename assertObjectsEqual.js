@@ -39,6 +39,8 @@ const assertObjectsEqual = (objOne, objTwo) => {
   return false;
 };
 
+module.exports = assertObjectsEqual;
+
 // TESTING:
 // const testObject1 = {
 //   egg1: [1],

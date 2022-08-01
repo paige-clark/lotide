@@ -21,6 +21,8 @@ const map = function(array, callback) {
   return result;
 };
 
+module.exports = map;
+
 //TESTING: the anon function returns a string with the word, but it can
 //         return the word modified in any way.
 // const result = map(words, word => `The word is: ${word}`);

@@ -25,6 +25,8 @@ console.log(findKey({
   "Akelarre":  { stars: 3 }
 }, x => x.stars < 2)); // => "Blue Hill"
 
+module.exports = findKey;
+
 // // ASSERT EQUALS FUNCTION
 // const assertEqual = function(actual, expected) {
 //   if (actual === expected) {

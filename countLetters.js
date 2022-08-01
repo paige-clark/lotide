@@ -24,6 +24,8 @@ const countLetters = (str) => {
   return result;
 };
 
+module.exports = countLetters;
+
 // TESTING
 // ASSERT EQUAL
 // const assertEqual = function(actual, expected) {
