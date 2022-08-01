@@ -32,8 +32,8 @@ const flatten = (inputArray) => {
 
 
 
-const array = ['egg', 'cheese', 'tofu', ['steak', 'beefs']];
-console.log(flatten(array));
-console.log(flatten([1, 2, [3, 4], 5, [6]])); // => [1, 2, 3, 4, 5, 6]
+// const array = ['egg', 'cheese', 'tofu', ['steak', 'beefs']];
+// console.log(flatten(array));
+// console.log(flatten([1, 2, [3, 4], 5, [6]])); // => [1, 2, 3, 4, 5, 6]
 
 module.exports = flatten;

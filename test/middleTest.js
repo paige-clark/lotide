@@ -7,15 +7,9 @@ describe(`#middle`, () => {
   it (`returns [2, 3] when given [1, 2, 3, 4]`, () => {
     assert.deepEqual(middle([1, 2, 3, 4]), [2, 3]);
   });
-
-  it (`returns [3, 4] when given [1, 2, 3, 4, 8, 9]`, () => {
-    assert.deepEqual(middle([1, 2, 3, 4, 8, 9]), [3, 4]);
-  });
-
-  it (`returns [3, 4] when given [1, 2, 3, 4, 8, 9]`, () => {
+  it (`returns ['quail egg'] when given ['chicken egg', 'quail egg', 'turkey giblets']`, () => {
     assert.deepEqual(middle(['chicken egg', 'quail egg', 'turkey giblets']), ['quail egg']);
   });
-
   it (`returns [] when given [1]`, () => {
     assert.deepEqual(middle([1]), []);
   });

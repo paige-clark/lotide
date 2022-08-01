@@ -3,6 +3,7 @@ const tail = require('../tail');
 
 // TESTING
 describe(`#tail`, () => {
+
   it (`returns [6,7] when given [5,6,7]`, () => {
     assert.deepEqual(tail([5,6,7]), [6,7]);
   });
@@ -12,4 +13,5 @@ describe(`#tail`, () => {
   it (`returns [] when given []`, () => {
     assert.deepEqual(tail([]), []);
   });
+  
 });
