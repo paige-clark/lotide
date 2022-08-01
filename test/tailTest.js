@@ -1,15 +1,15 @@
-const assertArraysEqual = require('../assertArraysEqual');
+const assert = require('chai').assert;
 const tail = require('../tail');
 
-// TEST CODE
-const test1 = [1,2,3,4];
-
-console.log('Should PASS:');
-assertArraysEqual(tail([5,6,7]), [6,7]);
-assertArraysEqual(tail(["Hello", "Lighthouse", "Labs"]), ["Lighthouse", "Labs"]);
-assertArraysEqual(tail(test1), [ 2, 3, 4 ]);
-assertArraysEqual(tail([]), []);
-
-console.log('Should FAIL:');
-assertArraysEqual(tail(["Night", "Lighthouse", "Labs"]), ["Night", "Lighthouse", "Labs"]);
-assertArraysEqual(tail(['3', 3]), ['3', 3]);
+// TESTING
+describe(`#tail`, () => {
+  it (`returns [6,7] when given [5,6,7]`, () => {
+    assert.deepEqual(tail([5,6,7]), [6,7]);
+  });
+  it (`returns ["Lighthouse", "Labs"] when given ["Hello", "Lighthouse", "Labs"]`, () => {
+    assert.deepEqual(tail(["Hello", "Lighthouse", "Labs"]), ["Lighthouse", "Labs"]);
+  });
+  it (`returns [] when given []`, () => {
+    assert.deepEqual(tail([]), []);
+  });
+});
